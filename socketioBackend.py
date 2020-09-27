@@ -22,8 +22,7 @@ class Room:
     def add_player(self, player):
         self.players.update({player, {
             'status': 'connected',
-            'team': None,
-            ''
+            'team': None
         }})
 
     def player_disconnected(self, player):
