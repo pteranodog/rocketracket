@@ -2,9 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Racket</title>
+    <link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-dark.min.css">
+    <style>
+        #stationSelection {
+          display: none;
+        }
+    </style>
 </head>
 <body>
-
+<div class="container" id="mainSelection">
+    <div class="row">
+        <div class="col-sm-12">
+            <center>
+                <h1>Rocket Racket</h1>
+            </center>
+        </div>
+    </div>
+    <div class="row">
+        <a class="col-sm button secondary" href="/rocket">
+            <center>
+                <br />
+                Create Rocket
+                <br />
+                &nbsp;
+            </center>
+        </a>
+    </div>
+    <div class="row">
+        <a class="col-sm button primary" href="/player">
+            <center>
+                <br />
+                I'm a Player
+                <br />
+                &nbsp;
+            </center>
+        </a>
+        <div class="col-sm button primary" onclick="stationSelection()">
+            <center>
+                <br />
+                Add Stations
+                <br />
+                &nbsp;
+            </center>
+        </div>
+    </div>
+    <center>
+        <div class="row">
+            <a class="col-sm button primary" href="https://github.com/pteranodog/rocketracket">
+                <center>
+                    <br />
+                    Read the Rules
+                    <br />
+                    &nbsp;
+                </center>
+            </a>
+        </div>
+    </center>
+</div>
+<div class="container" id="stationSelection">
+    <div class="row">
+        <div class="col-sm-12">
+            <center>
+                <h1>Rocket Racket</h1>
+            </center>
+        </div>
+    </div>
+    <div class="row">
+        <a class="col-sm button primary" href="/missioncontrol">
+            <center>
+                <br />
+                Mission Control
+                <br />
+                &nbsp;
+            </center>
+        </a>
+    </div>
+    <div class="row">
+        <a class="col-sm button primary" href="/fueltanks">
+            <center>
+                <br />
+                Fuel Tanks
+                <br />
+                &nbsp;
+            </center>
+        </a>
+        <a class="col-sm button primary" href="/launchtower">
+            <center>
+                <br />
+                Launch Tower
+                <br />
+                &nbsp;
+            </center>
+        </a>
+    </div>
+    <div class="row">
+        <a class="col-sm button primary" href="/crawler">
+            <center>
+                <br />
+                Crawler
+                <br />
+                &nbsp;
+            </center>
+        </a>
+        <a class="col-sm button primary" href="/astronautcomplex">
+            <center>
+                <br />
+                Astronaut Complex
+                <br />
+                &nbsp;
+            </center>
+        </a>
+    </div>
+    <center>
+        <div class="row">
+            <div class="col-sm button secondary" onclick="mainSelection()">
+                <center>
+                    <br />
+                    Back
+                    <br />
+                    &nbsp;
+                </center>
+            </div>
+        </div>
+    </center>
+</div>
+<script>
+    function stationSelection() {
+        document.getElementById("stationSelection").style.display = "block";
+        document.getElementById("mainSelection").style.display = "none";
+    }
+    function mainSelection() {
+        document.getElementById("stationSelection").style.display = "none";
+        document.getElementById("mainSelection").style.display = "block";
+    }
+</script>
 </body>
 </html>
