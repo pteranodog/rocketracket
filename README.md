@@ -11,12 +11,12 @@ Will NASA be able to select only their own members at the end of
 the game, or will the Spies be able to successfully plant a bomb on
 the rocket and infiltrate Mission Control to set it off?
 
-### Rules:
+## Rules:
 - You ***may not*** show any other player your screen. Ever.
 - Anybody can say anything at any time, as long as they follow the
 previous rule.
 
-### The Setup:
+## The Setup:
 - First, gather a group of friends sized between 6 and 50 people.
 If you are playing this while the COVID-19 pandemic is still going
 strong, please plan accordingly and accomodate for social distancing
@@ -42,7 +42,7 @@ interference between groups of people at their stations as possible.
 to the website and select "I'm a Player." Each player will be asked
 to enter their game code and will then be connected to the game.
 
-### The Game:
+## The Game:
 During Rocket Racket, there will be two alternating phases of play:
 #### The Task Phase:
 - During the task phase, groups of one to three players will
@@ -75,7 +75,7 @@ members how many of the players in that group were spies.
 These two alternating phases of play will occur five times each.
 Once five rounds have completed, The Launch will begin.
 
-### The Launch:
+## The Launch:
 Just before The Launch, one lucky (or unlucky) member of NASA's team
 will be selected as The Leader. This leader is in charge of making
 the most important decision of the game: Who will be placed on the
