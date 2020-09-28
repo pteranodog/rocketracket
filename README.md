@@ -44,7 +44,7 @@ to enter their game code and will then be connected to the game.
 
 ### The Game:
 During Rocket Racket, there will be two alternating phases of play:
-#####The Task Phase:
+##### The Task Phase:
 - During the task phase, groups of one to three players will
 take part in small tasks at the different stations. This could
 be booting up a computer, checking the rocket's engines, or
@@ -63,7 +63,7 @@ for sure.
 - If 25% of players are at a single station, they can search for
 bombs on this station and remove them. However, if a spy is part
 of their group, the spy will cause the bomb to be concealed.
-#####The Inspection Phase
+##### The Inspection Phase
 - During the Inspection Phase, 50% of the players will be
 selected via vote to be inspected.
 - Each player will select three other players. The 50% of players
