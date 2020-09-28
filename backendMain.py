@@ -35,3 +35,8 @@ def return_crawler():
 @app.route('/astronauts')
 def return_astronaut_complex():
     return render_template('html/astronautcomplex.html')
+
+
+@app.route('/player')
+def return_player_client():
+    return render_template('html/client.html')
