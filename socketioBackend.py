@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask_socketio import SocketIO
 
 app = Flask(__name__)
@@ -23,10 +23,16 @@ class Player:
         self.status = 'connected'
 
 
+class Station:
+    def __init__(self, uid):
+        self.uid = uid
+        self.code = '0000'
+
+
 class Room:
-    def __init__(self, room_number):
+    def __init__(self, room_number, rocket_uid):
         self.number = room_number
-        self.stations = {'rocket': None, 'missioncontrol': None, 'crawler': None,
+        self.stations = {'rocket': Station(rocket_uid), 'missioncontrol': None, 'crawler': None,
                          'fueltanks': None, 'launchtower': None, 'astronautcomplex': None}
         self.players = {}
         self.state = GameState()
@@ -40,5 +46,18 @@ class Room:
     def player_reconnected(self, player):
         self.players[player].reconnect()
 
+    def add_station(self, station_type, uid):
+        self.stations.update({station_type, Station(uid)})
+
     def start(self):
         pass
+
+
+@sio.on('connect')
+def new_connection():
+    pass
+
+
+@sio.on('new rocket')
+def new_rocket(room):
+    rooms.update({room, Room(room, request.sid)})
