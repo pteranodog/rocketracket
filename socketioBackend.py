@@ -11,6 +11,18 @@ class GameState:
         pass
 
 
+class Player:
+    def __init__(self):
+        self.status = 'connected'
+        self.team = None
+
+    def disconnect(self):
+        self.status = 'disconnected'
+
+    def reconnect(self):
+        self.status = 'connected'
+
+
 class Room:
     def __init__(self, room_number):
         self.number = room_number
@@ -20,16 +32,13 @@ class Room:
         self.state = GameState()
 
     def add_player(self, player):
-        self.players.update({player, {
-            'status': 'connected',
-            'team': None
-        }})
+        self.players.update({player, Player()})
 
     def player_disconnected(self, player):
-        self.players[player].update({'status': 'disconnected'})
+        self.players[player].disconnect()
 
     def player_reconnected(self, player):
-        self.players[player].update({'status': 'disconnected'})
+        self.players[player].reconnect()
 
     def start(self):
         pass
